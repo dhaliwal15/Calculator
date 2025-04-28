@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <!-- Header Section with Linear Gradient Background -->
+    <header>
+        <div class="hero">
+            <h1>Welcome to the Calculator App</h1>
+            <p>A simple, intuitive, and powerful calculator for all your basic needs.</p>
+            <a href="cal.html" class="cta-button">Click Here</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About the Calculator</h2>
+            <p>This calculator app is designed to provide users with a straightforward, easy-to-use tool for performing basic arithmetic operations. Whether you're a student, a professional, or just need a quick calculation, this app is for you!</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>Basic Operations</h3>
+                    <p>Addition, subtraction, multiplication, and division — all available in one place.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Scientific Calculator</h3>
+                    <p>functions for sine, cosine, tangent, and their inverses used for geometry and physics problems.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Voice Command</h3>
+                    <p>Error Reduction: occurs due to miskeyed inputs. Hands-Free Operation: calculations without touching</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to get in touch!</p>
+            <form action="submit_form.php" method="POST" onsubmit="showReviewAlert(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Calculator Project. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to show alert on form submission and reload the page
+        function showReviewAlert(event) {
+            event.preventDefault(); // Prevent form submission
+            alert("Thank you for your review! Your feedback has been submitted.");
+            location.reload(); // Reload the page after alert
+        }
+    </script>
+
+    <script src="new.js"></script>
+</body>
+</html>
